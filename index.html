@@ -1,5 +1,27 @@
 <!doctype html>
+
 <html>
+    <head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 32px;
+        }
+        button {
+            background-color: rgb(58, 13, 13);
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 7px;
+        }
+    </style>
+</head>
   <body>
     <h1 id="count">0</h1>
     <button id="btnAdd">Add 1</button>
@@ -29,9 +51,6 @@
         heading.textContent = count;
       }
 
-      buttonAdd.addEventListener("click", function () {
-        count += 1;
-      });
     </script>
   </body>
 </html>
